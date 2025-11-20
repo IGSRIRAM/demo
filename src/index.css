@@ -7,7 +7,7 @@
   --primary-color: #252024
 ; /* Main Text Color (Black) */
   --secondary-color: #FFFFFF; /* Background Color (White) */
-  --accent-color: #00a6f4;    /* Links or Buttons (Blue) */
+  --accent-color: #ffb800;    /* Links or Buttons (Blue) */
   --light-gray: #f9fafb;      /* For subtle backgrounds */
   --border-gray: #e5e7eb;      /* For subtle backgrounds */
 }

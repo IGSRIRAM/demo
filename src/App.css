@@ -1,11 +1,9 @@
 header{
-  padding: 20px 0;
-  position: absolute;
+  padding: 48px 0;
   bottom: 0;
   left: 50%;
   transform: translate(-50%);
-  
-
+  position: fixed;
   .container{
     display: flex;
     justify-content: center;
@@ -18,10 +16,9 @@ header{
     width: 100%;
     opacity: 1;
     padding: 4px;
-
     ul{
+      position: relative;
       display: flex;
-
       li{
         display: flex;
         a{
@@ -33,19 +30,65 @@ header{
           text-align: center;
           transition: all 0.3s ease;
           cursor: pointer;
-          
-          &:active, &:focus{
-            color: var(--primary-color);
-            background-color: var(--secondary-color);
-          }
+          display: flex;
+          align-items: center;
+          justify-content: center; 
+          gap: 5px;  
+        }
+        a.active{
+          color: var(--primary-color);
         }
       }
+    }
+    nav .nav-indicator {
+      position: absolute;
+      height: 46px;
+      background: var(--secondary-color);
+      border-radius: 50px;
+      top: 4px; /* adjust to align with link padding */
+      left: 4px;
+      z-index: -1;
+      transition: transform 0.35s ease, width 0.35s ease;
     }
   }
 }
 
+
+@media (max-width: 768px) {
+  header{
+    padding: 40px 0px;
+    li{
+      a{
+        min-width: 60px !important;
+        font-size: 18px;
+        .page-name{
+          display: none;
+        }
+      }
+    }
+    nav .nav-indicator {
+
+      height: 42px !important;
+      width: 60px;
+      border-radius: 50px;
+      top: 4px; /* adjust to align with link padding */
+      left: 4px;
+
+    }
+  }
+}
+
+
+.sc-hwkwBN.Stfry {
+  position: fixed;
+  display: flex;
+  top: 4%;
+  left: 80%;
+}
 .resume{
+  width: 100%;
   margin-top: 200vh;
+  margin-bottom: 200vh;
   section{
     .container{
       display: flex;
@@ -128,4 +171,10 @@ header{
       }
     }
   }
+}
+
+#home{
+  background-color: black;
+  height: 100vh;
+  width: 100%;
 }
