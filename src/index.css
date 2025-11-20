@@ -4,7 +4,7 @@
 /* ==== 1. CSS Variables (Global Colors) ==== */
 /* (Simple Black & White Theme) */
 :root {
-  --primary-color: #030712
+  --primary-color: #252024
 ; /* Main Text Color (Black) */
   --secondary-color: #FFFFFF; /* Background Color (White) */
   --accent-color: #00a6f4;    /* Links or Buttons (Blue) */
@@ -24,6 +24,7 @@ body {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   line-height: 1.6;
+  background-color: var(--primary-color);
 }
 
 /* ==== 3. Global Typography (Font Sizes) ==== */
@@ -70,18 +71,14 @@ p, li, a {
 }
 
 a {
-  color: var(--accent-color);
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
 
 
 /* ==== 4. Reusable Container Class (Responsive) ==== */
 .container {
-  width: 100%;
+  width: 80%;
   margin: 0 auto; /* Centers the container */
   padding: 0 20px; /* Adds space on the sides for mobile */
 }
@@ -128,7 +125,7 @@ a:hover {
 /* Extra large devices (Large Desktops) */
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1600px;
   }
 }
 

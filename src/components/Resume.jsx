@@ -1,8 +1,20 @@
 import React from 'react'
 
+import photoshop from '../assets/images/Adobe  Photoshop.svg'
+import figma from '../assets/images/figma-brands-solid-full.svg'
+import illustrator from '../assets/images/Adobe illustrator.svg'
+import html from '../assets/images/html5-brands-solid-full.svg'
+import css from '../assets/images/css3-alt-brands-solid-full.svg'
+import js from '../assets/images/square-js-brands-solid-full.svg'
+import react from '../assets/images/react-brands-solid-full.svg'
+import bootstrap from '../assets/images/bootstrap-brands-solid-full.svg'
+import canva from '../assets/images/canva.svg'
+import wordpress from '../assets/images/wordpress-brands-solid-full.svg'
+import wix from '../assets/images/wix-brands-solid-full.svg'
+
 function Resume() {
   return (
-    <main className="resume">
+    <main className="resume" id='resume'>
         <section>
             <div className="container">
                 <div className="col-5 left">
@@ -20,7 +32,25 @@ function Resume() {
                         </div>
                         <p>Actively looking for roles as a UI/UX Designer and Front‑End Developer.</p>
                     </div>
-                    <h3>Skills</h3>
+                    <h3>.Web Development</h3>
+                        <div className='skills'>
+                            <img src={html} alt="" />
+                            <img src={css} alt="" />
+                            <img src={js} alt="" />
+                            <img src={react} alt="" />
+                            <img src={bootstrap} alt="" />
+                            <img src={wordpress} alt="" />
+                            <img src={wix} alt="" />
+                        </div>
+                    <div >
+                        </div>
+                    <h3>.Design tools</h3>
+                    <div className='skills'>
+                        <img src={figma} alt="" />
+                        <img src={photoshop} alt="" />
+                        <img src={illustrator} alt="" />
+                        <img src={canva} alt="" />  
+                    </div>
                 </div>
                 <div className="col-7 right">
                     <div className="col-6">
