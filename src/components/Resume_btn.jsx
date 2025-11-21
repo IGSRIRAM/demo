@@ -53,7 +53,7 @@ const StyledWrapper = styled.div`
   }
 
   .text-container {
-    background: #ffb800;
+    background: var(--accent-color);
   }
   .svg-container{
     background: white;

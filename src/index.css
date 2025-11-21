@@ -1,17 +1,25 @@
 /* ==== Google Font Import (Poppins) ==== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700&display=swap');
 /* ==== 1. CSS Variables (Global Colors) ==== */
 /* (Simple Black & White Theme) */
-:root {
-  --primary-color: #252024
-; /* Main Text Color (Black) */
+:root,
+[data-theme="dark"] {
+  --primary-color: #000000; /* Main Text Color (Black) */
   --secondary-color: #FFFFFF; /* Background Color (White) */
   --accent-color: #ffb800;    /* Links or Buttons (Blue) */
+  --nav-accent-color: #ffffff;    /* Links or Buttons (Blue) */
   --light-gray: #f9fafb;      /* For subtle backgrounds */
   --border-gray: #e5e7eb;      /* For subtle backgrounds */
 }
-
+[data-theme="light"] {
+  --primary-color: #FFFFFF; /* Main Text Color (White) */
+  --secondary-color: #252024; /* Background Color (Black) */
+  --accent-color: #00b3ff;    /* Links or Buttons (Blue) */
+  --nav-accent-color: #00b3ff;    /* Links or Buttons (Blue) */
+  --light-gray: #1a1a1a;      /* For subtle backgrounds */
+  --border-gray: #333333;      /* For subtle backgrounds */
+}
 /* ==== 2. Global Reset & Body Styles ==== */
 * {
   margin: 0;
@@ -20,7 +28,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Albert Sans', sans-serif;
   background-color: var(--secondary-color);
   color: var(--primary-color);
   line-height: 1.6;
@@ -29,20 +37,21 @@ body {
 
 /* ==== 3. Global Typography (Font Sizes) ==== */
 h1 {
-  font-size: 2.5rem; /* ~40px */
+  font-size: 120px; /* ~40px */
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 2rem; /* ~32px */
-  font-weight: 600;
+  font-size: 56px; /* ~32px */
+  font-weight: 700;
   margin-bottom: 0.75rem;
+  color: var(--accent-color);
 }
 
 h3 {
-  font-size: 1.5rem; /* ~24px */
-  font-weight: 500;
+  font-size: 30px; /* ~24px */
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
@@ -65,9 +74,10 @@ h6 {
 }
 
 p, li, a {
-  font-size: 0.875rem; /* ~14px */
+  font-size: 18px; /* ~14px */
   font-weight: 400;
   list-style: none;
+  color: var(--secondary-color);
 }
 
 a {
