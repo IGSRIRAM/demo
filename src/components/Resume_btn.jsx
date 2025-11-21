@@ -36,6 +36,13 @@ const StyledWrapper = styled.div`
     left: calc(80% + 15px);
   }
 
+  @media (max-width: 768px) {
+    .download-btn {
+        left: auto;
+        right: 20px;
+      }
+  }
+
 
   .button-content {
     transform: translateY(-48px);
