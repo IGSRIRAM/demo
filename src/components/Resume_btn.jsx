@@ -30,7 +30,7 @@ const StyledWrapper = styled.div`
     border: none;
     border-radius: 30px;
     overflow: hidden;
-    position: fixed;
+    position: absolute;
     display: flex;
     top: 4%;
     left: calc(80% + 15px);

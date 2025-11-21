@@ -42,7 +42,7 @@
       height: 2.2em;
       border-radius: 30px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      position: fixed;
+      position: absolute;
       bottom: 1rem;
       left: 1rem;
     }
