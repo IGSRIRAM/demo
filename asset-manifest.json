@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/demo/static/css/main.c02b3d03.css",
-    "main.js": "/demo/static/js/main.51169eb1.js",
+    "main.css": "/demo/static/css/main.2a952325.css",
+    "main.js": "/demo/static/js/main.9ce5da37.js",
     "static/js/453.746c036c.chunk.js": "/demo/static/js/453.746c036c.chunk.js",
     "static/media/css3-alt-brands-solid-full.svg": "/demo/static/media/css3-alt-brands-solid-full.502540aad50efe205684443aaa0f5411.svg",
     "static/media/canva.svg": "/demo/static/media/canva.b6d793c96f2a38b12af94cf9f8c841b7.svg",
@@ -15,12 +15,12 @@
     "static/media/square-js-brands-solid-full.svg": "/demo/static/media/square-js-brands-solid-full.7b295d87a9766d264e6c4395b1d463c0.svg",
     "index.html": "/demo/index.html",
     "static/media/html5-brands-solid-full.svg": "/demo/static/media/html5-brands-solid-full.1bffdc54e29f405a85f90b0cfe21ab49.svg",
-    "main.c02b3d03.css.map": "/demo/static/css/main.c02b3d03.css.map",
-    "main.51169eb1.js.map": "/demo/static/js/main.51169eb1.js.map",
+    "main.2a952325.css.map": "/demo/static/css/main.2a952325.css.map",
+    "main.9ce5da37.js.map": "/demo/static/js/main.9ce5da37.js.map",
     "453.746c036c.chunk.js.map": "/demo/static/js/453.746c036c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c02b3d03.css",
-    "static/js/main.51169eb1.js"
+    "static/css/main.2a952325.css",
+    "static/js/main.9ce5da37.js"
   ]
 }
