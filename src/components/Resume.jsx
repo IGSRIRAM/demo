@@ -32,7 +32,7 @@ function Resume() {
                         </div>
                         <p>Actively looking for roles as a UI/UX Designer and Front‑End Developer.</p>
                     </div>
-                    <h3>.Web Development</h3>
+                    {/* <h3>.Web Development</h3>
                         <div className='skills'>
                             <img src={html} alt="" />
                             <img src={css} alt="" />
@@ -50,7 +50,7 @@ function Resume() {
                         <img src={photoshop} alt="" />
                         <img src={illustrator} alt="" />
                         <img src={canva} alt="" />  
-                    </div>
+                    </div> */}
                 </div>
                 <div className="col-7 right">
                     <div className="col-6">
