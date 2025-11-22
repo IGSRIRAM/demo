@@ -176,8 +176,7 @@ header{
 }
 
 #home{
-  /* background-color: var(--primary-color); */
-  background-color: green;
+  background-color: var(--primary-color);
   height: 100vh;
   width: 100%;
 }
