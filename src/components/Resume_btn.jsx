@@ -24,6 +24,7 @@ const StyledWrapper = styled.div`
 
 
   .download-btn {
+    // width: 48px;
     height: 48px;
     cursor: pointer;
     background: white;
