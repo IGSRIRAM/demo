@@ -3,7 +3,7 @@ header{
   bottom: 0;
   left: 50%;
   transform: translate(-50%);
-  position: absolute;
+  position: fixed;
   .container{
     display: flex;
     justify-content: center;
@@ -41,7 +41,7 @@ header{
       }
     }
     nav .nav-indicator {
-      position: absolute;
+      position: fixed;
       height: 48.8px;
       background: var(--nav-accent-color);
       border-radius: 50px;
@@ -78,7 +78,7 @@ header{
   }
 }
 .sc-hwkwBN.Stfry {
-  position: absolute;
+  position: fixed;
   display: flex;
   top: 4%;
   left: 80%;

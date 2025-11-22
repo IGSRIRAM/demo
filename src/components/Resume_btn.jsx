@@ -24,14 +24,13 @@ const StyledWrapper = styled.div`
 
 
   .download-btn {
-    // width: 48px;
     height: 48px;
     cursor: pointer;
     background: white;
     border: none;
     border-radius: 30px;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     display: flex;
     top: 4%;
     left: calc(80% + 15px);

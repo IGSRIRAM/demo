@@ -121,6 +121,9 @@ a {
 
 /* Responsive Breakpoints for the Container */
 
+/* Small devices (Phones) */
+
+
 /* Medium devices (Tablets) */
 @media (min-width: 768px) {
   .container {
@@ -140,6 +143,15 @@ a {
 @media (min-width: 1200px) {
   .container {
     max-width: 1600px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 20px;
   }
 }
 
