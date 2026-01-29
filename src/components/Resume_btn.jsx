@@ -34,6 +34,7 @@ const StyledWrapper = styled.div`
     display: flex;
     top: 4%;
     left: calc(80% + 15px);
+    Z-index: 100;
   }
 
   @media (max-width: 768px) {
@@ -63,12 +64,12 @@ const StyledWrapper = styled.div`
     background: var(--accent-color);
   }
   .svg-container{
-    background: white;
+    background: var(--primary-color-rev);
   }
 
   .text-container .text {
     font-size: 16px;
-    color: #000000ff;
+    color: var(--primary-color);
     font-weight: 600;
     opacity: 1;
     transition: opacity ease-in-out 250ms;
@@ -77,7 +78,7 @@ const StyledWrapper = styled.div`
   .download-icon {    
     height: 25px;
     width: 25px;
-    fill: #000000ff;
+    fill: var(--primary-color);
     opacity: 0;
     transition: opacity ease-in-out 250ms;
   }

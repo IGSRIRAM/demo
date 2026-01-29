@@ -1,368 +1,1066 @@
-<!-- Resume Section Start -->
-<section id="resume" class="resume-section">
-  <div class="resume-container">
-    <!-- Left: Heading + Intro -->
-    <div class="resume-header-block">
-      <p class="resume-eyebrow">Resume</p>
-      <h2 class="resume-title">Experience & Education</h2>
-      <p class="resume-intro">
-        A quick snapshot of my journey from Mechanical Engineering to UI/UX Design & Front‑End Development.
-        This section highlights my most relevant experience, education, and skills at a glance.
-      </p>
-      <div class="resume-actions">
-        <a href="#" class="btn-primary">Download CV</a>
-        <a href="#contact" class="btn-ghost">Let’s work together</a>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indana Gnaneswara Sriram | UI/UX Developer & Freelancer</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- CSS VARIABLES & RESET --- */
+        :root {
+            --primary: #2563eb;       /* Professional Blue */
+            --primary-dark: #1d4ed8;
+            --secondary: #0f172a;     /* Dark Slate */
+            --accent: #facc15;        /* Gold for highlights */
+            --text-dark: #334155;
+            --text-light: #94a3b8;
+            --bg-white: #ffffff;
+            --bg-light: #f8fafc;
+            --bg-dark: #1e293b;
+            --transition: all 0.3s ease;
+        }
 
-      <div class="resume-highlight">
-        <span class="resume-pill">Open to Work</span>
-        <p>Actively looking for roles as a <strong>UI/UX Designer</strong> and <strong>Front‑End Developer</strong>.</p>
-      </div>
-    </div>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
 
-    <!-- Right: Timeline Columns -->
-    <div class="resume-columns">
-      <!-- Experience Column -->
-      <div class="resume-column">
-        <h3 class="column-title">Experience</h3>
+        body {
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+            overflow-x: hidden;
+        }
 
-        <article class="resume-item">
-          <div class="resume-item-header">
-            <h4 class="role">UI/UX Designer & Front‑End Developer</h4>
-            <span class="pill pill-current">Freelance</span>
-          </div>
-          <p class="meta">Pixel Craft Studio · 2025 — Present</p>
-          <ul class="resume-list">
-            <li>Designing and developing responsive websites for small businesses and startups.</li>
-            <li>Creating user flows, wireframes, and high‑fidelity Figma prototypes.</li>
-            <li>Translating UI designs into clean HTML, CSS, and JavaScript/React code.</li>
-          </ul>
-        </article>
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-        <article class="resume-item">
-          <div class="resume-item-header">
-            <h4 class="role">UI/UX Trainee</h4>
-            <span class="pill">Training</span>
-          </div>
-          <p class="meta">Tech Mahindra SMART Academy · 2024 — 2025</p>
-          <ul class="resume-list">
-            <li>Learned design fundamentals, UX process, and modern UI patterns.</li>
-            <li>Worked on mini‑projects: portfolio, landing pages, dashboards.</li>
-            <li>Practiced tools like Figma, Photoshop, Illustrator, and basic prototyping.</li>
-          </ul>
-        </article>
-      </div>
+        ul {
+            list-style: none;
+        }
 
-      <!-- Education Column -->
-      <div class="resume-column">
-        <h3 class="column-title">Education</h3>
+        img {
+            max-width: 100%;
+            display: block;
+        }
 
-        <article class="resume-item">
-          <div class="resume-item-header">
-            <h4 class="role">B.Tech — Mechanical Engineering</h4>
-            <span class="pill">Graduate</span>
-          </div>
-          <p class="meta">Completed in 2024</p>
-          <ul class="resume-list">
-            <li>Developed strong problem‑solving and analytical thinking skills.</li>
-            <li>Worked on projects combining engineering logic with creative solutions.</li>
-          </ul>
-        </article>
+        /* --- NAVIGATION --- */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 5%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
 
-        <article class="resume-item">
-          <div class="resume-item-header">
-            <h4 class="role">Certification — Core Java</h4>
-            <span class="pill">Certified</span>
-          </div>
-          <p class="meta">2024</p>
-          <ul class="resume-list">
-            <li>Learned OOP concepts and fundamentals of programming.</li>
-            <li>Helps in understanding logic building and front‑end interactions.</li>
-          </ul>
-        </article>
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
 
-        <article class="resume-item">
-          <div class="resume-item-header">
-            <h4 class="role">UI/UX & Front‑End Skills</h4>
-            <span class="pill">Skills</span>
-          </div>
-          <p class="meta">Design · Code</p>
-          <ul class="skills-grid">
-            <li>Figma</li>
-            <li>Adobe XD / Photoshop</li>
-            <li>Illustrator</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Bootstrap</li>
-            <li>JavaScript</li>
-            <li>React (Basics)</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Resume Section End -->
+        .logo span {
+            color: var(--secondary);
+        }
 
-<style>
-  :root {
-    /* You can replace these with your palette variables */
-    --resume-bg: #ffffff;
-    --resume-text: #0f172a;
-    --resume-muted: #6b7280;
-    --resume-border: #e5e7eb;
-    --resume-accent: #2563eb;
-    --resume-accent-soft: #dbeafe;
-    --resume-radius: 18px;
-  }
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
 
-  .resume-section {
-    background: var(--resume-bg);
-    color: var(--resume-text);
-    padding: 80px 16px;
-  }
+        .nav-links a {
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--secondary);
+            transition: var(--transition);
+            position: relative;
+        }
 
-  .resume-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr);
-    gap: 40px;
-    align-items: flex-start;
-  }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
 
-  .resume-header-block {
-    position: sticky;
-    top: 80px;
-  }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--primary);
+            transition: var(--transition);
+        }
 
-  .resume-eyebrow {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
-    color: var(--resume-muted);
-    margin-bottom: 8px;
-  }
+        .nav-links a:hover::after {
+            width: 100%;
+        }
 
-  .resume-title {
-    font-size: clamp(26px, 3vw, 32px);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin-bottom: 14px;
-  }
+        .nav-cta {
+            background: var(--primary);
+            color: white !important;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600 !important;
+            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+        }
 
-  .resume-intro {
-    font-size: 14px;
-    line-height: 1.7;
-    color: var(--resume-muted);
-    max-width: 420px;
-  }
+        .nav-cta:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            color: white !important;
+        }
 
-  .resume-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 22px 0 18px;
-  }
+        .nav-cta::after {
+            display: none; /* Remove underline for button */
+        }
 
-  .btn-primary,
-  .btn-ghost {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 18px;
-    border-radius: 999px;
-    font-size: 13px;
-    border: 1px solid transparent;
-    text-decoration: none;
-    cursor: pointer;
-    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
-    white-space: nowrap;
-  }
+        .hamburger {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--secondary);
+        }
 
-  .btn-primary {
-    background: var(--resume-accent);
-    color: #ffffff;
-    box-shadow: 0 14px 30px rgba(37, 99, 235, 0.25);
-  }
+        /* --- HERO SECTION --- */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            position: relative;
+            padding-top: 80px; /* Offset for fixed navbar */
+        }
 
-  .btn-primary:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 18px 40px rgba(37, 99, 235, 0.3);
-    background: #1d4ed8;
-  }
+        .hero-content {
+            max-width: 600px;
+            z-index: 2;
+        }
 
-  .btn-ghost {
-    background: #ffffff;
-    color: var(--resume-text);
-    border-color: var(--resume-border);
-  }
+        .badge {
+            display: inline-block;
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--primary);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
 
-  .btn-ghost:hover {
-    background: var(--resume-accent-soft);
-    border-color: var(--resume-accent);
-  }
+        .hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
 
-  .resume-highlight {
-    margin-top: 6px;
-    padding: 12px 14px;
-    border-radius: 14px;
-    border: 1px dashed var(--resume-border);
-    background: #f9fafb;
-    font-size: 13px;
-    color: var(--resume-muted);
-  }
+        .hero h1 span {
+            color: var(--primary);
+        }
 
-  .resume-pill {
-    display: inline-flex;
-    align-items: center;
-    padding: 4px 10px;
-    border-radius: 999px;
-    background: var(--resume-accent-soft);
-    color: #1d4ed8;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    margin-bottom: 6px;
-  }
+        .hero h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+        }
 
-  .resume-columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-  }
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+        }
 
-  .column-title {
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
-    color: var(--resume-muted);
-    margin-bottom: 16px;
-  }
+        .hero-btns {
+            display: flex;
+            gap: 1rem;
+        }
 
-  .resume-item {
-    border-radius: var(--resume-radius);
-    border: 1px solid var(--resume-border);
-    padding: 14px 14px 12px;
-    margin-bottom: 14px;
-    background: #f9fafb;
-    position: relative;
-    overflow: hidden;
-  }
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: var(--transition);
+            cursor: pointer;
+        }
 
-  .resume-item::before {
-    content: "";
-    position: absolute;
-    inset-inline-start: 0;
-    top: 0;
-    width: 3px;
-    height: 100%;
-    background: linear-gradient(180deg, var(--resume-accent), transparent);
-  }
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            border: 2px solid var(--primary);
+            box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.39);
+        }
 
-  .resume-item-header {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    align-items: baseline;
-    margin-bottom: 4px;
-  }
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            border-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
 
-  .role {
-    font-size: 14px;
-    font-weight: 600;
-  }
+        .btn-outline {
+            background: transparent;
+            color: var(--secondary);
+            border: 2px solid var(--secondary);
+        }
 
-  .pill {
-    font-size: 11px;
-    padding: 3px 9px;
-    border-radius: 999px;
-    border: 1px solid var(--resume-border);
-    background: #ffffff;
-    color: var(--resume-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    white-space: nowrap;
-  }
+        .btn-outline:hover {
+            background: var(--secondary);
+            color: white;
+            transform: translateY(-2px);
+        }
 
-  .pill-current {
-    border-color: var(--resume-accent);
-    color: #1d4ed8;
-    background: var(--resume-accent-soft);
-  }
+        /* Abstract Shapes for Hero Background */
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            z-index: 1;
+            filter: blur(80px);
+        }
 
-  .meta {
-    font-size: 12px;
-    color: var(--resume-muted);
-    margin-bottom: 6px;
-  }
+        .shape-1 {
+            top: -10%;
+            right: -5%;
+            width: 400px;
+            height: 400px;
+            background: rgba(37, 99, 235, 0.15);
+        }
 
-  .resume-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 13px;
-    color: var(--resume-text);
-  }
+        .shape-2 {
+            bottom: 10%;
+            left: -10%;
+            width: 300px;
+            height: 300px;
+            background: rgba(250, 204, 21, 0.15);
+        }
 
-  .resume-list li {
-    position: relative;
-    padding-left: 16px;
-    margin-bottom: 4px;
-  }
+        /* --- SECTIONS COMMON --- */
+        .section {
+            padding: 6rem 5%;
+        }
 
-  .resume-list li::before {
-    content: "•";
-    position: absolute;
-    left: 4px;
-    top: 0;
-    color: var(--resume-accent);
-  }
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+        }
 
-  .skills-grid {
-    list-style: none;
-    padding: 0;
-    margin: 4px 0 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    font-size: 12px;
-  }
+        .section-title {
+            font-size: 2.25rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
 
-  .skills-grid li {
-    padding: 4px 8px;
-    border-radius: 999px;
-    border: 1px solid var(--resume-border);
-    background: #ffffff;
-    color: var(--resume-text);
-  }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            margin: 0.5rem auto 0;
+            border-radius: 2px;
+        }
 
-  @media (max-width: 900px) {
-    .resume-container {
-      grid-template-columns: minmax(0, 1fr);
-    }
+        .section-subtitle {
+             color: #64748b; 
+        }
 
-    .resume-header-block {
-      position: static;
-    }
-  }
+        /* --- SERVICES (FREELANCE FOCUS) --- */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
 
-  @media (max-width: 640px) {
-    .resume-section {
-      padding: 60px 16px;
-    }
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
 
-    .resume-columns {
-      grid-template-columns: minmax(0, 1fr);
-    }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary);
+        }
 
-    .resume-item-header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: #eff6ff;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
 
-    .resume-intro {
-      max-width: 100%;
-    }
-  }
-</style>
+        .service-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+
+        .service-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background: var(--bg-light);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+        
+        /* --- WORK / PORTFOLIO SECTION --- */
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .work-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            border: 1px solid #f1f5f9;
+        }
+        
+        .work-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .work-image {
+            height: 200px;
+            background: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 3rem;
+            position: relative;
+        }
+        
+        .work-image::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.1), transparent);
+        }
+        
+        .work-content {
+            padding: 2rem;
+        }
+        
+        .work-category {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .work-content h3 {
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin-bottom: 0.8rem;
+        }
+        
+        .work-content p {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .work-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+        
+        .work-link:hover {
+            color: var(--primary);
+            gap: 0.8rem;
+        }
+
+        /* --- ABOUT & SKILLS --- */
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .skill-item i {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .skill-info h4 {
+            font-size: 1rem;
+            color: var(--secondary);
+        }
+
+        .skill-info span {
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        /* --- EXPERIENCE TIMELINE --- */
+        .timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: #e2e8f0;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 2.5rem;
+            padding-bottom: 3rem;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 5px;
+            width: 14px;
+            height: 14px;
+            background: var(--primary);
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px var(--primary);
+        }
+
+        .timeline-date {
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .timeline-content h3 {
+            font-size: 1.25rem;
+            color: var(--secondary);
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-content .company {
+            font-size: 1rem;
+            color: #64748b;
+            font-style: italic;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .timeline-content p {
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        /* --- CONTACT --- */
+        .contact-section {
+            background: var(--secondary);
+            color: white;
+            padding-bottom: 3rem;
+        }
+        
+        .contact-section .section-title {
+            color: white;
+        }
+        
+        .contact-section .section-subtitle {
+             color: #94a3b8;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-info-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-top: 5px;
+        }
+
+        .contact-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-item a, .contact-item p {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .contact-item a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Freelance Status Box */
+        .freelance-status {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .freelance-status h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .status-badge {
+            background: #22c55e;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            vertical-align: middle;
+            margin-left: 0.5rem;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background: #020617;
+            color: #94a3b8;
+            padding: 2rem 5%;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 968px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            .about-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 1rem 5%;
+            }
+            
+            .nav-links {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Hidden by default */
+                transition: all 0.4s ease-in-out;
+            }
+
+            .nav-links.active {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .hero {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding-top: 100px;
+            }
+
+            .hero-btns {
+                justify-content: center;
+            }
+            
+            .shape {
+                display: none; /* Hide abstract shapes on mobile for performance/cleanliness */
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+            .timeline-item {
+                padding-left: 45px;
+            }
+            .timeline-item::after {
+                left: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="logo">Sriram<span>.Dev</span></a>
+        
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        
+        <div class="hero-content">
+            <span class="badge">Open to Work & Freelance Projects</span>
+            <h1>Turning Logic into <br><span>Digital Art</span></h1>
+            <h2>UI/UX Designer & Front-End Developer</h2>
+            <p>I build high-converting websites and applications using React, Wix Studio, and modern design principles. With 1 year of agency experience, I help businesses launch fast.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Start a Project</a>
+                <a href="#portfolio" class="btn btn-outline">See My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-light">
+        <div class="section-header">
+            <h2 class="section-title">What I Do</h2>
+            <p class="section-subtitle">I provide full-cycle web services, from the initial design in Figma to the final deployed React or WordPress site.</p>
+        </div>
+
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-code"></i></div>
+                <h3>Custom Web Development</h3>
+                <p>Tailor-made websites built with React.js. I focus on clean code, API integration, and performance optimization for scalable applications.</p>
+                <div class="service-tags">
+                    <span class="tag">React.js</span>
+                    <span class="tag">HTML5/CSS3</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
+                <h3>UI/UX Design</h3>
+                <p>Transforming complex requirements into intuitive user interfaces. I use Figma to create mockups that are both beautiful and functional.</p>
+                <div class="service-tags">
+                    <span class="tag">Figma</span>
+                    <span class="tag">Wireframing</span>
+                    <span class="tag">Prototyping</span>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-rocket"></i></div>
+                <h3>Rapid Site Launch</h3>
+                <p>Need a website yesterday? I utilize Wix Studio and WordPress to build professional, easily manageable sites for small businesses.</p>
+                <div class="service-tags">
+                    <span class="tag">Wix Studio</span>
+                    <span class="tag">WordPress</span>
+                    <span class="tag">CMS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Featured Work</h2>
+            <p class="section-subtitle">A selection of projects demonstrating my skills in React, Design, and Engineering.</p>
+        </div>
+        
+        <div class="work-grid">
+            <!-- Project 1 -->
+            <div class="work-card">
+                <div class="work-image">
+                    <i class="fas fa-ticket-alt"></i>
+                </div>
+                <div class="work-content">
+                    <span class="work-category">React Application</span>
+                    <h3>Ticket Management System</h3>
+                    <p>A CRUD-based React application that handles complex state management. Features include ticket creation, status updates, and dynamic filtering.</p>
+                    <a href="#" class="work-link">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="work-card">
+                <div class="work-image">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="work-content">
+                    <span class="work-category">Web Design</span>
+                    <h3>Personal Portfolio V1</h3>
+                    <p>My initial single-page portfolio designed and developed from scratch. Showcases smooth navigation and responsive layout techniques without frameworks.</p>
+                    <a href="https://igsriram.github.io/portfolio/" target="_blank" class="work-link">Visit Site <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="work-card">
+                <div class="work-image">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="work-content">
+                    <span class="work-category">Engineering & IOT</span>
+                    <h3>Robotic Mop Cleaner</h3>
+                    <p>An embedded systems project using Arduino and sensors. Demonstrates my ability to bridge hardware and software logic to solve real-world physical problems.</p>
+                    <a href="#" class="work-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+        <div class="about-container">
+            <div class="about-text">
+                <h2 class="section-title" style="text-align: left; margin: 0 0 1.5rem 0; display: block;">About Me</h2>
+                <div style="width: 60px; height: 4px; background: var(--primary); margin-bottom: 2rem; border-radius: 2px;"></div>
+                
+                <h3>From Mechanical Engineering to Digital Engineering</h3>
+                <p>I graduated in Mechanical Engineering (2024), but my passion for logic and creation led me to the IT world. Over the past two years, I have successfully transitioned into a full-time UI/UX Developer.</p>
+                <p>Currently, I work at <strong>Shiftwave Technologies</strong>, bridging the gap between design and code. My unique background gives me a problem-solving mindset—I don't just write code; I engineer solutions.</p>
+                
+                <a href="#contact" class="btn btn-outline" style="margin-top: 1rem;">Download Resume</a>
+            </div>
+
+            <div class="skills-box">
+                <h3 style="margin-bottom: 1.5rem; color: var(--secondary);">Technical Arsenal</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <div class="skill-info">
+                            <h4>React.js</h4>
+                            <span>Advanced</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <div class="skill-info">
+                            <h4>JavaScript</h4>
+                            <span>ES6+</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-figma"></i>
+                        <div class="skill-info">
+                            <h4>Figma</h4>
+                            <span>UI Design</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-wix"></i>
+                        <div class="skill-info">
+                            <h4>Wix Studio</h4>
+                            <span>CMS</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <div class="skill-info">
+                            <h4>APIs</h4>
+                            <span>Integration</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt"></i>
+                        <div class="skill-info">
+                            <h4>Git</h4>
+                            <span>Version Control</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">My professional journey in the tech industry.</p>
+        </div>
+
+        <div class="timeline">
+            <!-- Job 1 -->
+            <div class="timeline-item">
+                <span class="timeline-date">Dec 2024 - Present</span>
+                <div class="timeline-content">
+                    <h3>UI/UX Designer & Developer</h3>
+                    <span class="company">Shiftwave Technologies, Visakhapatnam</span>
+                    <p>Designed and implemented responsive UI layouts using React.js. Translated Figma mockups into reusable components and integrated RESTful APIs to fetch dynamic data. Focused on mobile-first responsiveness and performance optimization.</p>
+                </div>
+            </div>
+
+            <!-- Certification -->
+            <div class="timeline-item">
+                <span class="timeline-date">Jul 2024 - Nov 2024</span>
+                <div class="timeline-content">
+                    <h3>UI/UX Development Certification</h3>
+                    <span class="company">Tech Mahindra SMART Academy</span>
+                    <p>Intensive training in modern web technologies, design principles, and user experience strategies.</p>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="timeline-item">
+                <span class="timeline-date">2021 - 2024</span>
+                <div class="timeline-content">
+                    <h3>B.Tech, Mechanical Engineering</h3>
+                    <span class="company">Sanketika Vidya Parishad Engineering College</span>
+                    <p>GPA: 76.5. Developed a strong foundation in logical analysis and project management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="section-header">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-subtitle">Have a project in mind? I'm available for freelance work and full-time opportunities.</p>
+        </div>
+
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info-card">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:gnaneswarasriramindana1@gmail.com">gnaneswarasriramindana1@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 62819 69651</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <a href="http://linkedin.com/in/indana-gnaneswara-sriram" target="_blank">indana-gnaneswara-sriram</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <div>
+                        <h4>GitHub Portfolio</h4>
+                        <a href="https://igsriram.github.io/portfolio/" target="_blank">igsriram.github.io/portfolio</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Freelance Box -->
+            <div class="freelance-status">
+                <h3>Currently Available</h3>
+                <p>I am currently accepting new freelance projects for:</p>
+                <div style="margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem; text-align: left; background: rgba(0,0,0,0.2); padding: 1.5rem; border-radius: 8px;">
+                    <div><i class="fas fa-check" style="color: #4ade80; margin-right: 10px;"></i> Landing Pages</div>
+                    <div><i class="fas fa-check" style="color: #4ade80; margin-right: 10px;"></i> React Web Apps</div>
+                    <div><i class="fas fa-check" style="color: #4ade80; margin-right: 10px;"></i> Wix/WordPress Setup</div>
+                    <div><i class="fas fa-check" style="color: #4ade80; margin-right: 10px;"></i> Figma Design</div>
+                </div>
+                <a href="mailto:gnaneswarasriramindana1@gmail.com" class="btn" style="background: white; color: var(--primary); width: 100%; margin-top: 1.5rem; display: inline-block;">Hire Me Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Indana Gnaneswara Sriram. Designed & Developed by Sriram.Dev</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // --- SMOOTH SCROLLING ---
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu on click
+                    const navLinks = document.querySelector('.nav-links');
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                    }
+                });
+            });
+
+            // --- MOBILE MENU TOGGLE ---
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                
+                // Toggle icon between bars and times
+                const icon = hamburger.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+
+            // --- ANIMATION ON SCROLL (Simple Fade In) ---
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            const fadeElements = document.querySelectorAll('.service-card, .work-card, .timeline-item, .contact-info-card');
+            
+            fadeElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>

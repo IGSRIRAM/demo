@@ -17,7 +17,7 @@ function Header() {
 
   // Scroll -> update active section
   useEffect(() => {
-    const sectionIds = ['home', 'about', 'resume', 'portfolio', 'contact'];
+    const sectionIds = ['home', 'services', 'portfolio', 'about', 'experience', 'contact'];
 
     const handleScroll = () => {
       let current = sectionIds[0];
@@ -65,9 +65,10 @@ function Header() {
             <nav>
                 <ul ref={menuRef}>
                     <li><a href="#home" className={activeSection === 'home' ? 'active' : ''}onClick={() => setActiveSection('home')}><FontAwesomeIcon icon={faUser} /> <div className='page-name'>Home</div></a></li>
-                    <li><a href="#about" className={activeSection === 'about' ? 'active' : ''}onClick={() => setActiveSection('about')}><FontAwesomeIcon icon={faAddressCard} /> <div className='page-name'>About</div></a></li>
-                    <li><a href="#resume" className={activeSection === 'resume' ? 'active' : ''}onClick={() => setActiveSection('resume')}><FontAwesomeIcon icon={faFileLines} /> <div className='page-name'>Resume</div></a></li>
+                    <li><a href="#services" className={activeSection === 'services' ? 'active' : ''}onClick={() => setActiveSection('services')}><FontAwesomeIcon icon={faFileLines} /> <div className='page-name'>Services</div></a></li>
                     <li><a href="#portfolio" className={activeSection === 'portfolio' ? 'active' : ''}onClick={() => setActiveSection('portfolio')}><FontAwesomeIcon icon={faBriefcase} /> <div className='page-name'>Portfolio</div></a></li>
+                    <li><a href="#about" className={activeSection === 'about' ? 'active' : ''}onClick={() => setActiveSection('about')}><FontAwesomeIcon icon={faAddressCard} /> <div className='page-name'>About</div></a></li>
+                    <li><a href="#experience" className={activeSection === 'experience' ? 'active' : ''}onClick={() => setActiveSection('experience')}><FontAwesomeIcon icon={faFileLines} /> <div className='page-name'>Experience</div></a></li>
                     <li><a href="#contact" className={activeSection === 'contact' ? 'active' : ''}onClick={() => setActiveSection('contact')}><FontAwesomeIcon icon={faEnvelope} /> <div className='page-name'>Contact</div></a></li>
                 </ul>
                  <div className="nav-indicator" ref={indicatorRef}></div>
