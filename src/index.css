@@ -199,7 +199,9 @@ a {
 .btn-group {
     display: flex;
     gap: 20px;
+    text-align: center;
 }
+
 .wrapper {
     display: flex;
 }
@@ -244,6 +246,13 @@ a {
   width: calc(100% / 12);
 }
   
+
+.btn-group {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+}
 }
 
 /* MD - Tablet (768px to 991px) */

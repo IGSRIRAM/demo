@@ -267,7 +267,7 @@ header{
 
 .portfolio{
   /* margin-bottom: 20vh; */
-  padding: 80px 0 110px;
+  padding: 80px 0;
 
 
 .portfolio .container {
@@ -286,61 +286,33 @@ header{
   background-color: #999;
 }
 
-
-/* ===== SLICK LIST FIX ===== */
-.slick-list {
-  padding-top: 40px; /* space for arrows */
-  margin-right: -10px;
-  margin-left: -10px;
+.swiper {
+  padding-bottom: 30px; /* space for pagination */
+}
+.swiper-pagination{
+  /* position: static; */
+  margin-bottom: -15px;
 }
 
-.slick-track{
-  display: flex ;
-  gap: 20px;
-}
-
-/* ===== CUSTOM ARROWS ===== */
-.slick-prev,
-.slick-next {
-  position: absolute;
-  top: -10px;              /* ⬅ move arrows above cards */
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  z-index: 10;
-  transition: all 0.3s ease;
-}
-
-/* Right arrow */
-.slick-next {
-  right: 0;
-}
-
-/* Left arrow (slightly left of next) */
-.slick-prev {
-  right: 56px;
-  left: auto;
-}
-
-/* Arrow icons */
-.slick-prev:before,
-.slick-next:before {
-  font-size: 20px;
-  opacity: 1;
-}
-
-/* ===== DOTS ===== */
-.slick-dots {
-  bottom: -40px;
-}
-
-.slick-dots li button:before {
-  font-size: 10px;
-  color: #999;
-}
-
-.slick-dots li.slick-active button:before {
+.swiper-button-prev, .swiper-button-next {
   color: var(--accent-color);
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--secondary-bg);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+
+.swiper-pagination-bullet{
+  background-color: var(--secondary-color);
+}
+.swiper-pagination-bullet-active{
+  background-color: var(--accent-color);
 }
 
 }
@@ -680,6 +652,11 @@ header{
   /* box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.08); */
 }
 
+.contact__card.end p{
+ color: var(--light-text) !important;
+  font-size: 16px;
+}
+
 /* Titles */
 .card__title {
   /* font-size: 22px; */
@@ -824,6 +801,7 @@ header{
   color: var(--light-text);
   font-size: 16px;
   text-decoration: none;
+  word-break: break-all;
 }
 
 
@@ -1006,6 +984,10 @@ header{
     padding: 22px 18px;
     border-radius: 14px;
   }
+  .contact__card.end p{
+ /* color: var(--light-text) !important; */
+  font-size: 14px;
+}
 
   .info__icon {
     width: 44px;

@@ -127,7 +127,7 @@ function Contact() {
                 </form>
               </div>
 
-              <div className="contact__card" style={{textAlign:"center"}}>
+              <div className="contact__card end" style={{textAlign:"center"}}>
                 <p>© {new Date().getFullYear()} Indana Gnaneswara Sriram. Designed & Developed by me.</p>
               </div>
             </div>
