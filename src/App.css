@@ -287,7 +287,7 @@ header{
 }
 
 .swiper {
-  padding-bottom: 30px; /* space for pagination */
+  padding-bottom: 30px; 
 }
 .swiper-pagination{
   /* position: static; */
