@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/demo/static/css/main.01cafc3e.css",
-    "main.js": "/demo/static/js/main.9384147e.js",
+    "main.css": "/demo/static/css/main.f4f8465f.css",
+    "main.js": "/demo/static/js/main.78ea0a34.js",
     "static/js/453.746c036c.chunk.js": "/demo/static/js/453.746c036c.chunk.js",
     "static/media/me.png": "/demo/static/media/me.4162ac40bac13b28a363.png",
     "static/media/fa-solid-900.woff2": "/demo/static/media/fa-solid-900.8ae0d37556ff1e685de2.woff2",
@@ -13,23 +13,19 @@
     "static/media/fa-v4compatibility.woff2": "/demo/static/media/fa-v4compatibility.e4340c52a50e727c6afa.woff2",
     "static/media/Adobe  Photoshop.svg": "/demo/static/media/Adobe  Photoshop.bf9a086e85a0a8ce2bc5b0582db7a637.svg",
     "static/media/Adobe illustrator.svg": "/demo/static/media/Adobe illustrator.c0395169ff79eff685b977e0d5cf71fa.svg",
-    "static/media/slick.svg": "/demo/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/demo/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/demo/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/wix-brands-solid-full.svg": "/demo/static/media/wix-brands-solid-full.fbf350da95b75ae31709c06909b536ef.svg",
     "static/media/wordpress-brands-solid-full.svg": "/demo/static/media/wordpress-brands-solid-full.bf121b55d9283dd57b41fef03fc7fc6e.svg",
-    "static/media/slick.woff": "/demo/static/media/slick.295183786cd8a1389865.woff",
     "static/media/figma-brands-solid-full.svg": "/demo/static/media/figma-brands-solid-full.59164e706a5584d9277cae7aae83470f.svg",
     "static/media/bootstrap-brands-solid-full.svg": "/demo/static/media/bootstrap-brands-solid-full.03426289153ee4837a1ac7cb14482350.svg",
     "static/media/square-js-brands-solid-full.svg": "/demo/static/media/square-js-brands-solid-full.7b295d87a9766d264e6c4395b1d463c0.svg",
     "index.html": "/demo/index.html",
     "static/media/html5-brands-solid-full.svg": "/demo/static/media/html5-brands-solid-full.1bffdc54e29f405a85f90b0cfe21ab49.svg",
-    "main.01cafc3e.css.map": "/demo/static/css/main.01cafc3e.css.map",
-    "main.9384147e.js.map": "/demo/static/js/main.9384147e.js.map",
+    "main.f4f8465f.css.map": "/demo/static/css/main.f4f8465f.css.map",
+    "main.78ea0a34.js.map": "/demo/static/js/main.78ea0a34.js.map",
     "453.746c036c.chunk.js.map": "/demo/static/js/453.746c036c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.01cafc3e.css",
-    "static/js/main.9384147e.js"
+    "static/css/main.f4f8465f.css",
+    "static/js/main.78ea0a34.js"
   ]
 }
