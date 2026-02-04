@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from 'swiper/modules';
+import mvfences from "../assets/websites/mvfences.png";
 
 function Portfolio() {
   const projects = [
-    { id: 1, title: "Figma Design 1", category: "Figma" },
-    { id: 2, title: "WordPress Blog", category: "WordPress" },
-    { id: 3, title: "Shopify Store", category: "Shopify" },
-    { id: 4, title: "React Dashboard", category: "React" },
-    { id: 5, title: "HTML/CSS Site", category: "HTML/CSS" },
-    { id: 6, title: "Figma Design 2", category: "Figma" },
-    { id: 7, title: "WordPress Portfolio", category: "WordPress" },
-    { id: 8, title: "WordPress Portfolio", category: "WordPress" },
-    { id: 9, title: "WordPress Portfolio", category: "WordPress" },
+    { id: 1, title: "Figma Design 1", category: "Figma", image:mvfences },
+    { id: 2, title: "WordPress Blog", category: "WordPress", image:"" },
+    { id: 3, title: "Shopify Store", category: "Shopify", image:"" },
+    { id: 4, title: "React Dashboard", category: "React", image:"" },
+    { id: 5, title: "HTML/CSS Site", category: "HTML/CSS", image:"" },
+    { id: 6, title: "Figma Design 2", category: "Figma", image:"" },
+    { id: 7, title: "WordPress Portfolio", category: "WordPress", image:"" },
+    { id: 8, title: "WordPress Portfolio", category: "WordPress", image:"" },
+    { id: 9, title: "WordPress Portfolio", category: "WordPress", image:"" },
   ];
 
   const [filter, setFilter] = useState("All");
@@ -76,8 +77,13 @@ function Portfolio() {
             {filteredProjects.map((project) => (
               <SwiperSlide key={project.id}>
                 <div className="slide">
-                  <h3>{project.title}</h3>
-                  <p>{project.category}</p>
+                    <div className="image-box">
+    <img src={project.image} alt={project.title} />
+  </div>
+                  <div className="project-info">
+                    <h3>{project.title}</h3>
+                    <p>{project.category}</p>
+                  </div>
                 </div>
               </SwiperSlide>
             ))}

@@ -11,6 +11,7 @@ import bootstrap from '../assets/images/bootstrap-brands-solid-full.svg'
 import canva from '../assets/images/canva.svg'
 import wordpress from '../assets/images/wordpress-brands-solid-full.svg'
 import wix from '../assets/images/wix-brands-solid-full.svg'
+import Shopify from '../assets/images/shopify-brands-solid-full.svg'
 
 function About() {
   return (
@@ -36,10 +37,11 @@ function About() {
                             <img src={html} alt="" />
                             <img src={css} alt="" />
                             <img src={js} alt="" />
-                            <img src={react} alt="" />
                             <img src={bootstrap} alt="" />
+                            <img src={react} alt="" />
                             <img src={wordpress} alt="" />
                             <img src={wix} alt="" />
+                            <img src={Shopify} alt="" />
                         </div>
                     <div >
                         </div>

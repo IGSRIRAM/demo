@@ -19,30 +19,30 @@
 :root,
 [data-theme="dark"] {
   --primary-color: #000000; /* Main Text Color (Black) */
+  --secondary-bg: #0F0F0F;
+  --accent-color: #ffb800;    /* Links or Buttons (Blue) */
   --primary-color-rev: #ffffff; /* Main Text Color (White) */
   --secondary-color: #FFFFFF; /* Background Color (White) */
-  --accent-color: #ffb800;    /* Links or Buttons (Blue) */
   --nav-accent-color: #ffffff;    /* Links or Buttons (Blue) */
   --light-gray: #f9fafb;      /* For subtle backgrounds */
   --border-gray: #e5e7eb;      /* For subtle backgrounds */
   --light-text: #b3b3b3;
   --white: #ffffff;
-  --secondary-bg: #0c0c0c;
   .skills img {
         filter: invert(1);
   }
 }
 [data-theme="light"] {
   --primary-color: #FFFFFF; /* Main Text Color (White) */
+  --secondary-bg: #f8fafc;
+  --accent-color: #00b3ff;    /* Links or Buttons (Blue) */
   --primary-color-rev: #000000; /* Main Text Color (Black) */
   --secondary-color: #252024; /* Background Color (Black) */
-  --accent-color: #00b3ff;    /* Links or Buttons (Blue) */
   --nav-accent-color: #00b3ff;    /* Links or Buttons (Blue) */
   --light-gray: #1a1a1a;      /* For subtle backgrounds */
   --border-gray: #333333;      /* For subtle backgrounds */
   --light-text: #5f6368;
   --white: #ffffff;
-  --secondary-bg: #f8fafc;
   .skills img {
         filter: invert(0);
   }
